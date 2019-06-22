@@ -203,7 +203,7 @@ public abstract class SwipeHelper extends ItemTouchHelper.SimpleCallback {
     public abstract void instantiateUnderlayButton(RecyclerView.ViewHolder viewHolder, List<UnderlayButton> underlayButtons);
 
     public static class UnderlayButton {
-        private String text;
+//        private String text;
         private int imageResId;
         private int color;
         private int pos;
@@ -213,8 +213,8 @@ public abstract class SwipeHelper extends ItemTouchHelper.SimpleCallback {
         private int img_width;
         private int img_height;
 
-        public UnderlayButton(String text, int imageResId, int img_width, int img_height, int button_width, int color, UnderlayButtonClickListener clickListener, Context context) {
-            this.text = text;
+        public UnderlayButton(int imageResId, int img_width, int img_height, int button_width, int color, UnderlayButtonClickListener clickListener, Context context) {
+//            this.text = text;
             this.imageResId = imageResId;
             this.color = color;
             this.clickListener = clickListener;
