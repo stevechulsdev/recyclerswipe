@@ -45,7 +45,7 @@
 # Kotlin 코드 적용
 <h3>Activity, Fragment단에서 호출</h3>
 <pre><code>
-  object : StevechulSwipeHelper(this, recycler) {
+  object : StevechulsSwipeHelper(this, recycler) {
             override fun instantiateUnderlayButton(
                 viewHolder: RecyclerView.ViewHolder, 
                 underlayButtons: MutableList<UnderlayButton>) {
