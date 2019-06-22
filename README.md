@@ -14,11 +14,9 @@
     ...
     repositories {
       ...
-      mavenCentral()
-      jcenter()
-      maven {
-            url 'https://dl.bintray.com/stevechulsdev/maven/'
-        }
+      <strong>mavenCentral()</strong>
+      <strong>jcenter()</strong>
+      <strong>maven { url 'https://dl.bintray.com/stevechulsdev/maven/' }</strong>
     }
     dependencies {
       ...
@@ -28,11 +26,9 @@
   allprojects {
     repositories {
       ...
-      mavenCentral()
-      jcenter()
-      maven {
-        url 'https://dl.bintray.com/stevechulsdev/maven/'
-      }
+      <strong>mavenCentral()</strong>
+      <strong>jcenter()</strong>
+      <strong>maven { url 'https://dl.bintray.com/stevechulsdev/maven/' }</strong>
     }
   }
 </code></pre>
@@ -42,7 +38,7 @@
 <pre><code>
   dependencies {
     ...
-    implementation 'com.stevechulsdev.android:recycler-swipe:<strong>1.0.0</strong>@aar'
+    <strong>implementation 'com.stevechulsdev.android:recycler-swipe:<strong>1.0.0</strong>@aar'</strong>
   }
 </pre></code>
 
