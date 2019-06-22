@@ -117,4 +117,14 @@
   <com.android.tools.chunkio/>
   <com.android.tools.fakeadbserver/>
   <androidx.savedstate/>
+  <com.google.android.libraries.places/>
+  <androidx.viewpager2/>
+  <androidx.navigation/>
+  <androidx.work/>
+  <androidx.sharetarget/>
+  <androidx.enterprise/>
+  <androidx.camera/>
+  <androidx.benchmark/>
+  <androidx.security/>
+  <com.google.android.datatransport/>
 </metadata>
