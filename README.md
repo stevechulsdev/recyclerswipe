@@ -45,3 +45,23 @@
     implementation 'com.stevechulsdev.android:recycler-swipe:<strong>1.0.0</strong>@aar'
   }
 </pre></code>
+
+# Kotlin 코드 적용
+<h3>Activity, Fragment단에서 호출</h3>
+<pre><code>
+  object : StevechulSwipeHelper(this, recycler) {
+            override fun instantiateUnderlayButton(
+                viewHolder: RecyclerView.ViewHolder, 
+                underlayButtons: MutableList<UnderlayButton>) {
+                    underlayButtons.add(
+                        UnderlayButton(R.drawable.icon_garbage, 250, 250, 200,
+                            Color.parseColor("#e5001b"),
+                            UnderlayButtonClickListener { pos ->
+                                recycler.adapter?.notifyItemChanged(pos)
+                                adapter.removeItemToSwipe(pos)
+                            }, this@MainActivity
+                        )
+                    )
+            }
+        }
+</pre></code>
