@@ -61,6 +61,16 @@ Class명을 바꿨는데, 적용이 바로 안되는 것 같습니다
             override fun instantiateUnderlayButton(
                 viewHolder: RecyclerView.ViewHolder, 
                 underlayButtons: MutableList<UnderlayButton>) {
+                    // one button
+                    underlayButtons.add(
+                        UnderlayButton(R.drawable.icon_garbage, 250, 250, 200,
+                            Color.parseColor("#e5001b"),
+                            UnderlayButtonClickListener { pos ->
+                                recycler.adapter?.notifyItemChanged(pos)
+                                adapter.removeItemToSwipe(pos)
+                            }, this@MainActivity
+                        )
+                    // two button
                     underlayButtons.add(
                         UnderlayButton(R.drawable.icon_garbage, 250, 250, 200,
                             Color.parseColor("#e5001b"),
