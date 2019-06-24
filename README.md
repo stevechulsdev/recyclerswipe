@@ -44,8 +44,19 @@
 
 # Kotlin 코드 적용
 <h3>Activity, Fragment단에서 호출</h3>
-Class명을 바꿨는데, 적용이 바로 안되는 것 같습니다<br>
+Class명을 바꿨는데, 적용이 바로 안되는 것 같습니다
+<br>
 <strong>StevechulsSwipeHelper</strong>가 호출이 안되면, <strong>SwipeHelper</strong>로 호출해서 사용하시길 바랍니다.
+<br>
+<br>
+<h4>UnderlayButton Parameter</h4><br>
+@param <strong>Icon Resource</strong><br>
+@param <strong>Icon Width</strong><br>
+@param <strong>Icon Height</strong><br>
+@param <strong>Button Width</strong><br>
+@param <strong>Button Background Color</strong><br>
+@param <strong>UnderlayButtonClickListener</strong><br>
+@param <strong>Context</strong><br>
 <pre><code>
   object : StevechulsSwipeHelper(this, recycler) {
             override fun instantiateUnderlayButton(
