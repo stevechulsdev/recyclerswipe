@@ -70,6 +70,7 @@ Class명을 바꿨는데, 적용이 바로 안되는 것 같습니다
                                 adapter.removeItemToSwipe(pos)
                             }, this@MainActivity
                         )
+                    )
                     // two button
                     underlayButtons.add(
                         UnderlayButton(R.drawable.icon_garbage, 250, 250, 200,
